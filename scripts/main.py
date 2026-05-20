@@ -233,7 +233,8 @@ def main() -> None:
     write_feeds(all_entries)
 
     # ページ表示用にツールを対応機能数降順・ツール名昇順でソート
-    # saas はスキャン機能ではなく提供形態のフラグのため除外する
+    # コア攻撃能力を表す機能フラグのみを並び順のキーとして使用する
+    # (saas は提供形態・passive_scan/crawler/ci_cd/report_generation/gui は補助的機能のため除外)
     _SCAN_FEATURE_KEYS = ("web_scanning", "api_scanning", "authenticated_scan", "active_scan")
     tools_for_pages = sorted(
         tools,

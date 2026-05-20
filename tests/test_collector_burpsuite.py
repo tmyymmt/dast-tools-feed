@@ -58,7 +58,7 @@ def test_collect_burpsuite_returns_entries():
     assert len(entries) >= 1
     assert entries[0].tool_id == "burpsuite"
     assert entries[0].tool_name == "Burp Suite"
-    assert "portswigger.net" in entries[0].url
+    assert entries[0].url.startswith("https://portswigger.net/")
 
 
 @responses.activate
