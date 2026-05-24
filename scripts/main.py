@@ -4,7 +4,7 @@ import logging
 import os
 import tempfile
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import yaml
 
@@ -38,7 +38,7 @@ def load_tools_config() -> list:
         return yaml.safe_load(f)["tools"]
 
 
-def collect_tool(tool: dict, github_token: str) -> List[ReleaseEntry]:
+def collect_tool(tool: dict, github_token: Optional[str]) -> List[ReleaseEntry]:
     """ツール設定に応じたコレクターを呼び出す。エラー時は空リストを返す。"""
     tool_type = tool["type"]
     try:

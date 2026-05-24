@@ -85,6 +85,8 @@
 | GitHub OSS（OWASP ZAP・Nuclei 等） | GitHub Actions + GitHub Releases API（構造化データ取得可） |
 | 商用（Burp Suite） | GitHub Actions + HTMLスクレイピング |
 
+Burp Suite の `published_at` は次の順で決定する：リリース URL パスの日時（`/YYYY-M-D/...`）→ タイトル中の日時（`YYYY-MM-DD`）→ バージョン先頭の年（`YYYY-01-01`）→ 最終フォールバックとして現在 UTC 時刻。
+
 ### GitHub Releases API
 
 - エンドポイント：`https://api.github.com/repos/{owner}/{repo}/releases`
@@ -106,6 +108,7 @@
   - ソース変更時の影響範囲を最小化できる
 - 履歴は永久に保持・蓄積する（削除しない）
 - 対象ツールはYAML等の設定ファイルで管理し、コード変更なしで追加できる構造にする
+- マージ時の重複判定キーはリリース URL とする。同一 URL が既存にある場合は、既存エントリの `body` が欠けているときのみ新規データで補完し、その他の既存フィールドは保持する。
 
 ---
 
@@ -133,6 +136,8 @@ https://tmyymmt.github.io/dast-tools-feed/
 | `.nojekyll` | GitHub Pages の Jekyll 処理を無効化 |
 
 HTMLページは `prefers-color-scheme` メディアクエリでブラウザ・OS の設定を検知し、自動的にダークモードを適用する。
+
+公開ページに出力する Markdown 由来 HTML はサニタイズしてから書き出す。危険なタグは削除し、未対応タグはアンラップし、`<a href>` は相対 URL または `http` / `https` / `mailto` スキームのみ許可する。
 
 `index.html` のツール一覧は概要版テーブルと同じソート順（概要版機能フラグのチェックマーク数降順、同数は `gui: true` 優先、さらに同条件はアルファベット昇順）で並べる。`comparison.html` の各テーブルはテーブルごとに独立したソート順を持つ（そのテーブルの列のチェックマーク数降順、同数は `gui: true` 優先、さらに同条件はアルファベット順）。
 

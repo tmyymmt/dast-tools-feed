@@ -1,8 +1,11 @@
 """ツールごとのまとめページおよび比較ページをMarkdownで生成する。"""
 from datetime import datetime, timezone
+from html import escape
 from typing import Dict, List, Optional
+from urllib.parse import urlparse
 
 import markdown as _md_lib
+from bs4 import BeautifulSoup
 
 from scripts.models import ReleaseEntry
 
@@ -33,15 +36,49 @@ _HTML_STYLE = """
 """
 
 
+_ALLOWED_TAGS = {
+    "a", "blockquote", "br", "code", "em", "h1", "h2", "h3", "h4", "h5", "h6",
+    "hr", "li", "ol", "p", "pre", "strong", "table", "tbody", "td", "th", "thead",
+    "tr", "ul",
+}
+_DANGEROUS_TAGS = {"button", "embed", "form", "iframe", "input", "link", "meta", "object", "script", "style"}
+
+
+def _is_safe_href(href: str) -> bool:
+    normalized_href = href.strip()
+    if normalized_href and ord(normalized_href[0]) < 32:
+        return False
+    if normalized_href.startswith(("//", "\\\\")):
+        return False
+    scheme = urlparse(normalized_href).scheme.lower()
+    return scheme in {"", "http", "https", "mailto"}
+
+
+def _sanitize_html(body_html: str) -> str:
+    soup = BeautifulSoup(body_html, "html.parser")
+    for tag in soup.find_all(True):
+        if tag.name in _DANGEROUS_TAGS:
+            tag.decompose()
+            continue
+        if tag.name not in _ALLOWED_TAGS:
+            tag.unwrap()
+            continue
+        for attr in list(tag.attrs):
+            if tag.name == "a" and attr == "href" and _is_safe_href(tag[attr]):
+                continue
+            del tag[attr]
+    return str(soup)
+
+
 def render_html(title: str, md_content: str, lang: str = "en") -> str:
     """MarkdownをHTMLページに変換する。"""
-    body_html = _md_lib.markdown(md_content, extensions=["tables", "fenced_code"])
+    body_html = _sanitize_html(_md_lib.markdown(md_content, extensions=["tables", "fenced_code"]))
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}</title>
+  <title>{escape(title, quote=True)}</title>
   <style>{_HTML_STYLE}</style>
 </head>
 <body>

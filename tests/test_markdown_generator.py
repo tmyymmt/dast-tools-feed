@@ -2,6 +2,7 @@
 import pytest
 
 from scripts.markdown_generator import (
+    _is_safe_href,
     generate_comparison_page,
     generate_comparison_page_ja,
     generate_tool_page,
@@ -143,6 +144,26 @@ def test_render_html_returns_html_document():
 def test_render_html_lang_ja():
     result = render_html("テスト", "# こんにちは", lang="ja")
     assert 'lang="ja"' in result
+
+
+def test_render_html_escapes_title_and_sanitizes_body():
+    result = render_html(
+        '<script>alert("title")</script>',
+        '# Hello\n\n<script>alert("body")</script>\n\n[bad](javascript:alert(1))\n\n[bad2]( javascript:alert(2))',
+    )
+    assert "<script" not in result
+    assert 'javascript:alert(1)' not in result
+    assert 'javascript:alert(2)' not in result
+    assert "<title>&lt;script&gt;alert(&quot;title&quot;)&lt;/script&gt;</title>" in result
+
+
+def test_is_safe_href_rejects_control_char_prefix():
+    assert _is_safe_href("\x00javascript:alert(1)") is False
+
+
+@pytest.mark.parametrize("href", ["//example.com/path", "\\\\example.com\\path"])
+def test_is_safe_href_rejects_protocol_relative_and_unc_like_paths(href):
+    assert _is_safe_href(href) is False
 
 
 def test_render_html_renders_table():

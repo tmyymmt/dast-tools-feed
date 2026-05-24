@@ -85,6 +85,8 @@ Feeds are categorized by release type, also used for filtering:
 | GitHub OSS (OWASP ZAP, Nuclei, etc.) | GitHub Actions + GitHub Releases API (structured data) |
 | Commercial (Burp Suite) | GitHub Actions + HTML scraping |
 
+Burp Suite `published_at` should be derived in this order: date in release URL path (`/YYYY-M-D/...`), date in title (`YYYY-MM-DD`), year in version (`YYYY-01-01`), then current UTC time as final fallback.
+
 ### GitHub Releases API
 
 - Endpoint: `https://api.github.com/repos/{owner}/{repo}/releases`
@@ -106,6 +108,7 @@ Feeds are categorized by release type, also used for filtering:
   - Minimizes impact when upstream sources change
 - History is retained permanently and accumulates indefinitely (never deleted)
 - Target tools are managed in a configuration file (YAML, etc.) so new tools can be added without code changes
+- Merge deduplication key is release URL. When the same URL already exists, only missing `body` in the existing entry may be backfilled from new data; other existing fields are preserved.
 
 ---
 
@@ -133,6 +136,8 @@ https://tmyymmt.github.io/dast-tools-feed/
 | `.nojekyll` | Disables Jekyll processing on GitHub Pages |
 
 HTML pages automatically apply dark mode by detecting browser/OS settings via the `prefers-color-scheme` media query.
+
+Markdown-rendered HTML for published pages must be sanitized before writing. Dangerous tags are removed, unsupported tags are unwrapped, and `<a href>` allows only relative URLs or `http` / `https` / `mailto` schemes.
 
 The tool list in `index.html` uses the same sort order as the Summary table: summary feature checkmark count descending, then `gui: true` first, then alphabetically by tool name. Rows in `comparison.html` are sorted independently per table: each table sorts by its own checkmark count descending, then by `gui: true` first, then alphabetically.
 

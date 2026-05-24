@@ -39,7 +39,7 @@ def merge_entries(existing: List[ReleaseEntry], new: List[ReleaseEntry]) -> List
     # body が空の既存エントリを新しいエントリで上書き
     for e in new:
         if e.url in existing_by_url and not existing_by_url[e.url].body and e.body:
-            existing_by_url[e.url] = e
+            existing_by_url[e.url].body = e.body
     truly_new = [e for e in new if e.url not in existing_by_url]
     updated_existing = [existing_by_url[e.url] for e in existing]
     return truly_new + updated_existing

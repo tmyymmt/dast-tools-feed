@@ -25,7 +25,7 @@ def _fetch_page_body(url: str) -> str:
         soup = BeautifulSoup(resp.text, "lxml")
         # Try to find the main content area
         for selector in ["article", "main", ".release-notes", ".content"]:
-            content = soup.find(selector)
+            content = soup.select_one(selector)
             if content:
                 return content.get_text(separator="\n", strip=True)
         return ""
@@ -65,16 +65,24 @@ def collect_burpsuite() -> List[ReleaseEntry]:
         version = version_match.group(1).replace("-", ".") if version_match else title
 
         # Extract date from href or title
-        date_match = re.search(r"(\d{4})-(\d{2})-(\d{2})", title)
+        date_match = re.search(r"/(\d{4})-(\d{1,2})-(\d{1,2})(?:/|$)", href)
         if date_match:
-            published_at = f"{date_match.group(1)}-{date_match.group(2)}-{date_match.group(3)}T00:00:00Z"
+            published_at = (
+                f"{date_match.group(1)}-{int(date_match.group(2)):02d}-{int(date_match.group(3)):02d}T00:00:00Z"
+            )
         else:
-            # Try to extract year from version
-            year_match = re.search(r"^(\d{4})", version)
-            if year_match:
-                published_at = f"{year_match.group(1)}-01-01T00:00:00Z"
+            title_date_match = re.search(r"(\d{4})-(\d{2})-(\d{2})", title)
+            if title_date_match:
+                published_at = (
+                    f"{title_date_match.group(1)}-{title_date_match.group(2)}-{title_date_match.group(3)}T00:00:00Z"
+                )
             else:
-                published_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                # Try to extract year from version
+                year_match = re.search(r"^(\d{4})", version)
+                if year_match:
+                    published_at = f"{year_match.group(1)}-01-01T00:00:00Z"
+                else:
+                    published_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
         body = _fetch_page_body(url)
 
