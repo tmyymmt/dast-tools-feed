@@ -45,7 +45,10 @@ _DANGEROUS_TAGS = {"button", "embed", "form", "iframe", "input", "link", "meta",
 
 
 def _is_safe_href(href: str) -> bool:
-    scheme = urlparse(href).scheme
+    normalized_href = href.strip()
+    if normalized_href and ord(normalized_href[0]) < 32:
+        return False
+    scheme = urlparse(normalized_href).scheme.lower()
     return scheme in {"", "http", "https", "mailto"}
 
 
