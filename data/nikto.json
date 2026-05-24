@@ -1,0 +1,22 @@
+[
+  {
+    "tool_id": "nikto",
+    "tool_name": "Nikto",
+    "version": "2.6.0",
+    "published_at": "2026-02-11T22:01:29Z",
+    "url": "https://github.com/sullo/nikto/releases/tag/2.6.0",
+    "summary": "Nikto 2.6.0",
+    "body": "Nikto 2.6.0 is now available on [GitHub](https://github.com/sullo/nikto).\r\n\r\nThis is a major release with significant internal improvements, new capabilities, and long-term architectural upgrades.\r\n\r\n⚠️ Important Note\r\n\r\nThis release introduces format changes to JSON and XML reports that may impact\r\nexisting parsers and integrations. Also the primary branch has been set to `main`.\r\n\r\n🔧 What’s New in 2.6.0\r\n\r\nNikto 2.6.0 includes hundreds of improvements, with highlights below:\r\n- ~10% faster scans through core engine optimizations\r\n- New Domain Specific Language (DSL) for more expressive, accurate tests\r\n- Rewritten JSON, XML, and SQL report plugins\r\n- Multiple report formats per scan (generate several outputs at once)\r\n- All-new cross-platform LFI testing with platform detection\r\n- Cookies enabled by default for more realistic scanning\r\n- Randomized User-Agent selection per request\r\n- Bulk scanner script for running multiple Nikto instances using screen\r\n- Legacy plugin and dead-code removal (no test coverage lost)\r\n- Reference cleanup (OSVDB, Securiteam, SecurityFocus removed)\r\n- License update: Nikto code is now GPLv3\r\n- New and more accurate tests added\r\n- Improved config loading to reduce distro-specific issues (including Kali)\r\n- Bash wrapper util to execute multiple scans in screen\r\n\r\n…and many additional fixes and refinements.\r\n\r\nGetting Started\r\n\r\nYou can start using Nikto 2.6.0 by updating an existing installation from GitHub or by downloading a release archive from the repository.\r\n\r\nFeedback & Issues\r\n\r\nAs always, if you encounter bugs or problems, please [open an issue on GitHub](https://github.com/sullo/nikto/issues/new/choose).",
+    "category": "feature"
+  },
+  {
+    "tool_id": "nikto",
+    "tool_name": "Nikto",
+    "version": "2.5.0",
+    "published_at": "2023-12-03T19:00:51Z",
+    "url": "https://github.com/sullo/nikto/releases/tag/2.5.0",
+    "summary": "Nikto 2.5.0",
+    "body": "Nikto 2.5.0 has now been promoted to release and the master branch!\r\n\r\n**Note: [Breaking changes](https://github.com/sullo/nikto/wiki/2.5.0-Potentially-Breaking-Changes) to JSON and XML output may have occurred. If you rely on these formats please test before upgrading.**\r\n\r\nThis version contains hundreds of updates over several years, including the highlights below. \r\n- IPv6 support (thanks to @richardleach)\r\n- Updated `db_checks` format uses multiple reference\r\n- Hundreds of OSVDB and BID references replaced\r\n- Removal of some very old and false-positive prone tests\r\n- Decode Netscaler cookies (thanks to @canberkpolat)\r\n- Add `-usecookies` flag to send received cookies with subsequent requests\r\n- Add `-followredirects` flag to signal 3xx responses should be fetched and tested\r\n- Add `-noslash` to remove trailing slash from directories\r\n- Check for indexing on redirect paths\r\n- Alert on `alt-svc` header\r\n- Hundreds of bug fixes, test updates and enhancements, and other optimization changes\r\n\r\nYou can start using Nikto 2.5.0 by performing a `git pull` from the master branch, cloning the repository again, or [downloading the zip file](https://github.com/sullo/nikto/archive/refs/heads/master.zip).\r\n\r\nAs always, if you encounter bugs or problems, please [open an issue](https://github.com/sullo/nikto/issues/new/choose).\r\n\r\n![image](https://github.com/sullo/nikto/assets/1474884/796062af-7cb1-404c-9c0c-720d110d62c7 )\r\n",
+    "category": "bugfix"
+  }
+]

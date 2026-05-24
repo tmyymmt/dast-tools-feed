@@ -146,6 +146,7 @@ The tool list in `index.html` uses the same sort order as the Summary table: sum
 Each per-tool page (`{tool_id}.html` / `{tool_id}_ja.html`) contains:
 
 - Tool overview (title, description, type, license, homepage link)
+- Pricing display; when `pricing` contains `Free (Community)` and `community_url` is configured in `tools.yml`, `Free (Community)` is rendered as a link to the official Community Edition page. When `pricing` contains `Paid` and `pricing_url` is configured, `Paid` is rendered as a link to the official paid edition page.
 - **Features table**: 9 feature flags with ✅/❌ status:
   - Web Application Scanning, API Scanning, Authenticated Scanning, Active Scanning, Passive Scanning, Web Crawler, CI/CD Integration, Report Generation, GUI
 - Feature reference link to official documentation (`features_url` in tools.yml, fallback to `homepage`)
@@ -159,6 +160,8 @@ The comparison pages (`comparison.html` / `comparison_ja.html`) contain two tabl
 - **Summary table**: Tool name (with link to per-tool page and feature reference link), latest version, last updated, type, license, pricing, and basic feature flags (Web Scan, API Scan, Auth, Active, Passive).
 - **Detailed Comparison table**: Tool name (with link to per-tool page and feature reference link), all feature flags plus a Unique Features column. Feature flags covered:
   - Web Scan, API Scan, Auth, Active, Passive, Crawler, CI/CD, Report, GUI
+
+In the Summary table pricing column, when `community_url` is configured and `pricing` contains `Free (Community)`, that text is rendered as a link to the official Community Edition page. When `pricing_url` is configured and `pricing` contains `Paid`, that text is rendered as a link to the official paid edition page.
 
 Each table uses its own sort order: checkmark count within that table's feature columns descending, then gui true first, then alphabetical.
 

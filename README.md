@@ -6,9 +6,18 @@ Updated weekly via GitHub Actions. Subscribe with any RSS reader.
 
 🌐 **Live site**: https://tmyymmt.github.io/dast-tools-feed/
 
-## What is DAST?
+## Tool Category
 
-Dynamic Application Security Testing (DAST) refers to security testing techniques that analyze running applications by sending requests and observing responses, without access to source code. DAST tools simulate real-world attacks to detect vulnerabilities such as XSS, SQL injection, authentication flaws, and misconfigurations.
+This repository covers **DAST (Dynamic Application Security Testing) tools** — tools that dynamically test running applications for vulnerabilities.
+
+Specifically, it targets tools that send requests to live web applications or APIs and detect vulnerabilities such as XSS, SQL injection, authentication flaws, and misconfigurations by observing responses and runtime behavior.
+
+The following categories are **out of scope**:
+
+- **SCA (Software Composition Analysis)**: Tools that detect known vulnerabilities based on SBOMs and dependency analysis
+  (Related: https://github.com/tmyymmt/sca-tools-feed/)
+- **SAST (Static Application Security Testing)**: Tools that detect vulnerabilities through static source code analysis
+  (Related: https://github.com/tmyymmt/sast-tools-feed/)
 
 ## Covered Tools
 
@@ -89,7 +98,7 @@ source .venv/bin/activate
 pip install -r requirements-dev.txt
 
 # Run collection and generate feeds/pages
-FEED_BASE_URL="https://tmyymmt.github.io/dast-tools-feed/feeds" python -m scripts.main
+python -m scripts.main
 
 # Run tests
 pytest tests/
