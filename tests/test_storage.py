@@ -73,10 +73,24 @@ def test_merge_entries_updates_empty_body():
         body="",
         category="feature",
     )
-    new_with_body = make_entry(url="https://example.com/v1.0", version="v1.0")
+    new_with_body = ReleaseEntry(
+        tool_id="burpsuite",
+        tool_name="Burp Suite",
+        version="2024.3.1",
+        published_at="2024-03-01T00:00:00Z",
+        url="https://example.com/v1.0",
+        summary="2024.3.1",
+        body="## Changes\n- fix: something",
+        category="feature",
+    )
     merged = merge_entries([existing_no_body], [new_with_body])
     assert len(merged) == 1
     assert merged[0].body == "## Changes\n- fix: something"
+    assert merged[0].tool_id == "burpsuite"
+    assert merged[0].tool_name == "Burp Suite"
+    assert merged[0].version == "2024.3.1"
+    assert merged[0].published_at == "2024-03-01T00:00:00Z"
+    assert merged[0].category == "feature"
 
 
 def test_merge_entries_does_not_overwrite_existing_body():

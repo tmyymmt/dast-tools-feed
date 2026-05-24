@@ -145,6 +145,16 @@ def test_render_html_lang_ja():
     assert 'lang="ja"' in result
 
 
+def test_render_html_escapes_title_and_sanitizes_body():
+    result = render_html(
+        '<script>alert("title")</script>',
+        '# Hello\n\n<script>alert("body")</script>\n\n[bad](javascript:alert(1))',
+    )
+    assert "<script" not in result
+    assert 'javascript:alert(1)' not in result
+    assert "<title>&lt;script&gt;alert(&quot;title&quot;)&lt;/script&gt;</title>" in result
+
+
 def test_render_html_renders_table():
     md = "| A | B |\n|---|---|\n| 1 | 2 |"
     result = render_html("T", md)

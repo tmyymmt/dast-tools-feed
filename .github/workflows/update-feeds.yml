@@ -31,9 +31,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Playwright browsers
-        run: playwright install --with-deps chromium
-
       - name: Collect and generate feeds and pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -76,7 +73,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 title,
-                body: `The daily feed update workflow failed.\n\n[See run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
+                body: `The weekly feed update workflow failed.\n\n[See run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
                 labels: ['feed-failure'],
               });
             }

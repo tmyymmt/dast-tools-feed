@@ -87,7 +87,6 @@ Releases are categorized for easy filtering:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements-dev.txt
-playwright install chromium
 
 # Run collection and generate feeds/pages
 FEED_BASE_URL="https://tmyymmt.github.io/dast-tools-feed/feeds" python -m scripts.main

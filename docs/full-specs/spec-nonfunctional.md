@@ -20,8 +20,8 @@
 | Atomic writes | Write to a temp file then rename; never publish a partially written file |
 | Rate limiting | On GitHub API 429, skip that run and retry on the next scheduled execution |
 | 404 / page gone | Log the error and preserve existing data as-is |
-| GitHub Actions alerts | Auto-create an Issue after N consecutive failures |
-| Feed validation | Validate generated RSS/Atom/JSON Feed by parsing and schema-checking before publishing |
+| GitHub Actions alerts | On workflow failure, auto-create an Issue if no open `feed-failure` Issue already exists |
+| Feed validation | Generated RSS/Atom/JSON feeds are written directly without additional parsing or schema validation |
 | Rollback | Data is stored in Git, so broken state can be reverted with `git revert` |
 
 ## License
