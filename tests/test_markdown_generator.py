@@ -161,6 +161,11 @@ def test_is_safe_href_rejects_control_char_prefix():
     assert _is_safe_href("\x00javascript:alert(1)") is False
 
 
+@pytest.mark.parametrize("href", ["//example.com/path", "\\\\example.com\\path"])
+def test_is_safe_href_rejects_protocol_relative_and_unc_like_paths(href):
+    assert _is_safe_href(href) is False
+
+
 def test_render_html_renders_table():
     md = "| A | B |\n|---|---|\n| 1 | 2 |"
     result = render_html("T", md)

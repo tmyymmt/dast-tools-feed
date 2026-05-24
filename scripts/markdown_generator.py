@@ -48,6 +48,8 @@ def _is_safe_href(href: str) -> bool:
     normalized_href = href.strip()
     if normalized_href and ord(normalized_href[0]) < 32:
         return False
+    if normalized_href.startswith(("//", "\\\\")):
+        return False
     scheme = urlparse(normalized_href).scheme.lower()
     return scheme in {"", "http", "https", "mailto"}
 
