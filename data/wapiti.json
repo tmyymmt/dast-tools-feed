@@ -1,0 +1,212 @@
+[
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.3.0",
+    "published_at": "2026-05-13T19:31:36Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.3.0",
+    "summary": "3.3.0",
+    "body": "## What's Changed\r\n\r\n* Added more paths to the Buster module dictionary by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/700](https://github.com/wapiti-scanner/wapiti/pull/700)\r\n* Updated headless Firefox by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/701](https://github.com/wapiti-scanner/wapiti/pull/701)\r\n* Updated CMS fingerprint files by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/705](https://github.com/wapiti-scanner/wapiti/pull/705)\r\n* Fixed consistency between `wp_enum` and `cms/wp_enum` versions by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/702](https://github.com/wapiti-scanner/wapiti/pull/702)\r\n* Marked \"Directory Traversal File Include\" vulnerability as false positive by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/703](https://github.com/wapiti-scanner/wapiti/pull/703)\r\n* Fixed Angular detection by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/706](https://github.com/wapiti-scanner/wapiti/pull/706)\r\n* Added Python 3.14 support by @devl00p in [https://github.com/wapiti-scanner/wapiti/pull/709](https://github.com/wapiti-scanner/wapiti/pull/709)\r\n* Added SPIP plugin detection by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/707](https://github.com/wapiti-scanner/wapiti/pull/707)\r\n* Added devcontainer environment by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/711](https://github.com/wapiti-scanner/wapiti/pull/711)\r\n* Upgraded PHP version in the endpoint container by @devl00p in [https://github.com/wapiti-scanner/wapiti/pull/712](https://github.com/wapiti-scanner/wapiti/pull/712)\r\n* Forced `aiosqlite` version lower than 0.22.0 by @devl00p in [https://github.com/wapiti-scanner/wapiti/pull/713](https://github.com/wapiti-scanner/wapiti/pull/713)\r\n* Fixed cookie-based detection and added tests by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/708](https://github.com/wapiti-scanner/wapiti/pull/708)\r\n* Deprecated the `wp_enum` module by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/716](https://github.com/wapiti-scanner/wapiti/pull/716)\r\n* Added a JWT option by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/717](https://github.com/wapiti-scanner/wapiti/pull/717)\r\n* Fixed non-working `--side-file` option by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/718](https://github.com/wapiti-scanner/wapiti/pull/718)\r\n* Marked \"Backup Files\" vulnerabilities as false positives by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/720](https://github.com/wapiti-scanner/wapiti/pull/720)\r\n* Added WordPress WPML Multilingual CMS plugin detection to the CMS module by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/722](https://github.com/wapiti-scanner/wapiti/pull/722)\r\n* Added Drupal plugin detection by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/723](https://github.com/wapiti-scanner/wapiti/pull/723)\r\n* Added a Printer module by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/721](https://github.com/wapiti-scanner/wapiti/pull/721)\r\n* Removed version field from docker-compose files by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/726](https://github.com/wapiti-scanner/wapiti/pull/726)\r\n* Fixed `.gitignore` for integration tests by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/727](https://github.com/wapiti-scanner/wapiti/pull/727)\r\n* Updated PHP version by @MathisFranel in [https://github.com/wapiti-scanner/wapiti/pull/729](https://github.com/wapiti-scanner/wapiti/pull/729)\r\n* Improved `mod_exec` by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/719](https://github.com/wapiti-scanner/wapiti/pull/719)\r\n* Updated `gitlab-ci.yml` by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/730](https://github.com/wapiti-scanner/wapiti/pull/730)\r\n* Added detection for CVE-2024-55591 by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/704](https://github.com/wapiti-scanner/wapiti/pull/704)\r\n* Added Ivanti detection module by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/731](https://github.com/wapiti-scanner/wapiti/pull/731)\r\n* Added Palo Alto detection and version fingerprinting module by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/732](https://github.com/wapiti-scanner/wapiti/pull/732)\r\n* Added Magento and TYPO3 CMS detection by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/724](https://github.com/wapiti-scanner/wapiti/pull/724)\r\n* Improved Dockerfiles by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/734](https://github.com/wapiti-scanner/wapiti/pull/734)\r\n* Fixed regression affecting webpages in reports by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/735](https://github.com/wapiti-scanner/wapiti/pull/735)\r\n* Fixed `core-js` detection issue in `mod_wapp` by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/733](https://github.com/wapiti-scanner/wapiti/pull/733)\r\n* Fixed and standardized Ivanti and Palo Alto modules by @bretfourbe in [https://github.com/wapiti-scanner/wapiti/pull/737](https://github.com/wapiti-scanner/wapiti/pull/737)\r\n* Fixed Palo Alto ETag detection by @bretfourbe in [https://github.com/wapiti-scanner/wapiti/pull/738](https://github.com/wapiti-scanner/wapiti/pull/738)\r\n* Fixed regex in the `information_disclosure` module by @bretfourbe in [https://github.com/wapiti-scanner/wapiti/pull/739](https://github.com/wapiti-scanner/wapiti/pull/739)\r\n* Installed Playwright Firefox in `/opt` for multi-user access by @Qwarctick in [https://github.com/wapiti-scanner/wapiti/pull/740](https://github.com/wapiti-scanner/wapiti/pull/740)\r\n* Removed body and headers from responses when `detail_report_level = 1` by @bretfourbe in [https://github.com/wapiti-scanner/wapiti/pull/741](https://github.com/wapiti-scanner/wapiti/pull/741)\r\n* Fixed Forti error and TYPO3 false positive by @bretfourbe in [https://github.com/wapiti-scanner/wapiti/pull/744](https://github.com/wapiti-scanner/wapiti/pull/744)\r\n* Added detection patterns for modern DBMS by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/752](https://github.com/wapiti-scanner/wapiti/pull/752)\r\n* Fixed `[FF]` placeholder not being replaced in XSS payloads by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/753](https://github.com/wapiti-scanner/wapiti/pull/753)\r\n* Added detection patterns for modern frameworks and ORMs by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/754](https://github.com/wapiti-scanner/wapiti/pull/754)\r\n* Added missing indexes on frequently filtered database columns by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/756](https://github.com/wapiti-scanner/wapiti/pull/756)\r\n* Added support for XHTML and XML content types in XSS detection by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/755](https://github.com/wapiti-scanner/wapiti/pull/755)\r\n* Optimized XSS module by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/747](https://github.com/wapiti-scanner/wapiti/pull/747)\r\n* perf(explorer): use sets for O(n) → O(1) request lookups by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/758](https://github.com/wapiti-scanner/wapiti/pull/758)\r\n* perf(mod_takeover): reuse a shared `httpx.AsyncClient` by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/760](https://github.com/wapiti-scanner/wapiti/pull/760)\r\n* perf(attack): switched `attacked_get` / `attacked_post` from lists to sets by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/761](https://github.com/wapiti-scanner/wapiti/pull/761)\r\n* perf(stickycookie): removed artificial delays in MITM proxy by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/762](https://github.com/wapiti-scanner/wapiti/pull/762)\r\n* Speeded up `mod_backup` using concurrent requests by @hbenazha in [https://github.com/wapiti-scanner/wapiti/pull/757](https://github.com/wapiti-scanner/wapiti/pull/757)\r\n* Modernized Firefox user-agent by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/763](https://github.com/wapiti-scanner/wapiti/pull/763)\r\n* perf(intercepting_explorer): optimized browser waits and clicks by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/764](https://github.com/wapiti-scanner/wapiti/pull/764)\r\n* Added Python 3.14 support in TOML configuration by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/767](https://github.com/wapiti-scanner/wapiti/pull/767)\r\n* Added SQLite PRAGMAs to improve I/O performance by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/766](https://github.com/wapiti-scanner/wapiti/pull/766)\r\n* Fixed triple N+1 query issue in `_get_paths()` by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/765](https://github.com/wapiti-scanner/wapiti/pull/765)\r\n* Allowed running both crawlers sequentially by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/768](https://github.com/wapiti-scanner/wapiti/pull/768)\r\n* Grouped transactions in `add_payload`, `save_request`, and `save_requests` by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/769](https://github.com/wapiti-scanner/wapiti/pull/769)\r\n* Fixed N+1 query issue in `get_payloads()` by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/749](https://github.com/wapiti-scanner/wapiti/pull/749)\r\n* perf(persister): avoided unnecessary deep copies during serialization by @fwininger in [https://github.com/wapiti-scanner/wapiti/pull/750](https://github.com/wapiti-scanner/wapiti/pull/750)\r\n* Improved scanning of URLs with uppercase hostnames by @ArseneCBW in [https://github.com/wapiti-scanner/wapiti/pull/743](https://github.com/wapiti-scanner/wapiti/pull/743)\r\n* Fixed Tomcat image used in tests by @Qwarctick in [https://github.com/wapiti-scanner/wapiti/pull/773](https://github.com/wapiti-scanner/wapiti/pull/773)\r\n* Code review fixes — batch 2026-05 by @devl00p in [https://github.com/wapiti-scanner/wapiti/pull/777](https://github.com/wapiti-scanner/wapiti/pull/777)\r\n* Fixed bugs based on May 2026 crash reports and updated documentation by @devl00p in [https://github.com/wapiti-scanner/wapiti/pull/778](https://github.com/wapiti-scanner/wapiti/pull/778)\r\n* Updated changelog and copyright date by @devl00p in [https://github.com/wapiti-scanner/wapiti/pull/779](https://github.com/wapiti-scanner/wapiti/pull/779)\r\n* Bumped version to 3.3.0 and updated manpages by @devl00p in [https://github.com/wapiti-scanner/wapiti/pull/780](https://github.com/wapiti-scanner/wapiti/pull/780)\r\n\r\n## New Contributors\r\n\r\n* @MathisFranel made their first contribution in [https://github.com/wapiti-scanner/wapiti/pull/729](https://github.com/wapiti-scanner/wapiti/pull/729)\r\n* @hbenazha made their first contribution in [https://github.com/wapiti-scanner/wapiti/pull/757](https://github.com/wapiti-scanner/wapiti/pull/757)\r\n* @ArseneCBW made their first contribution in [https://github.com/wapiti-scanner/wapiti/pull/743](https://github.com/wapiti-scanner/wapiti/pull/743)\r\n\r\n**Full Changelog**: [[wapiti 3.2.10...3.3.0 comparison](https://github.com/wapiti-scanner/wapiti/compare/3.2.10...3.3.0?utm_source=chatgpt.com)](https://github.com/wapiti-scanner/wapiti/compare/3.2.10...3.3.0?utm_source=chatgpt.com)",
+    "category": "security"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.10",
+    "published_at": "2025-11-13T20:27:56Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.10",
+    "summary": "3.2.10",
+    "body": "## What's Changed\r\n* Rework HTML report by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/694\r\n* Use parallelism for some attack modules and fix -v0 option by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/695\r\n* release 3.2.10 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/696\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.9...3.2.10",
+    "category": "feature"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.9",
+    "published_at": "2025-11-07T21:11:09Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.9",
+    "summary": "3.2.9",
+    "body": "## What's Changed\r\n* Remove parsing of SWF files by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/685\r\n* Use playwright instead of wapiti-arsenic by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/686\r\n* Relax dependencies more by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/687\r\n* remove loguru dependency, add utility for installing firefox headless by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/688\r\n* improve terminal coloring by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/689\r\n* fix xml report generator by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/692\r\n* convert body of crawled pages to string for detailed reports by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/693\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.8...3.2.9",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.8",
+    "published_at": "2025-10-25T13:38:24Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.8",
+    "summary": "3.2.8",
+    "body": "## What's Changed\r\n* relax dependencies by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/683\r\n* release v3.2.8 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/684\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.7...3.2.8",
+    "category": "feature"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.7",
+    "published_at": "2025-10-13T18:53:23Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.7",
+    "summary": "3.2.7",
+    "body": "## What's Changed\r\n* Rework headers management by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/677\r\n* Pass headers specified by swagger files to generated requests by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/679\r\n* bump some dependencies by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/680\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.6...3.2.7",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.6",
+    "published_at": "2025-10-07T16:30:51Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.6",
+    "summary": "3.2.6",
+    "body": "## What's Changed\r\n* Add NS takeover checking in mod_takeover by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/667\r\n* Fix mod_unsecure_password by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/678\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.5...3.2.6",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.5",
+    "published_at": "2025-09-05T12:20:10Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.5",
+    "summary": "3.2.5",
+    "body": "## What's Changed\r\n* fix wappalyzer user warnings and deprecation warnings in other modules by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/648\r\n* Move attack management to a new ActiveScanner class by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/650\r\n* upgrade httpx by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/651\r\n* Upgrade httpcore and mitmproxy by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/652\r\n* Improve mod_nikto support by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/653\r\n* Add a new intermediate class for iter_forms by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/655\r\n* Remove the original request ID previously kept on payloads in sqlite3 db by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/656\r\n* Make `parameter` optional on `add_payload` with `None` default value by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/657\r\n* Adapt to Apache branding used my Wappalyzer by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/658\r\n* Refactoring on wapiti_main function by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/660\r\n* refactor wapiti_main: group attack_options logic in a single function by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/661\r\n* Passive scanner by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/664\r\n* Release 3.2.5 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/666\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.4...3.2.5",
+    "category": "feature"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.4",
+    "published_at": "2025-04-05T13:43:32Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.4",
+    "summary": "3.2.4",
+    "body": "## What's Changed\r\n* Remove pylint-ignore which is old and block dependencies on CI by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/643\r\n* wapiti 3.2.4: support Python 3.13 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/645\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.3...3.2.4",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.3",
+    "published_at": "2025-04-03T08:20:04Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.3",
+    "summary": "3.2.3",
+    "body": "## What's Changed\r\n* Use a modified arsenic packaged under another name to pass pypi restr… by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/633\r\n* Bump aiohttp from 3.10.2 to 3.10.11 by @dependabot in https://github.com/wapiti-scanner/wapiti/pull/629\r\n* Fix false positives on ID command injections attacks by @tarraschk in https://github.com/wapiti-scanner/wapiti/pull/638\r\n* Use wapiti-swagger for Swagger/OpenAPI parsing by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/640\r\n* Support Python 3.12 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/604\r\n* release 3.2.3 to support python 3.12 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/642\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.2...3.2.3",
+    "category": "feature"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.2",
+    "published_at": "2024-11-30T13:22:13Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.2",
+    "summary": "3.2.2",
+    "body": "## What's Changed\r\n* Improvements for Windows compatibility by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/630\r\n* use an arsenic fork fixed for python 3.12 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/631\r\n* Release 3.2.2 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/632\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.1...3.2.2",
+    "category": "bugfix"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.1",
+    "published_at": "2024-11-12T12:33:34Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.1",
+    "summary": "3.2.1",
+    "body": "## What's Changed\r\n* Bump aiohttp from 3.9.4 to 3.10.2 by @dependabot in https://github.com/wapiti-scanner/wapiti/pull/610\r\n* crawler: fix empty enctype case by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/614\r\n* Fix integration tests by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/615\r\n* remove stale dependency on \"six\" by @a-detiste in https://github.com/wapiti-scanner/wapiti/pull/616\r\n* Fix documentation by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/620\r\n* doc: fix wiki link in readme file by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/622\r\n* Remove the need for the asyncio stop Event on attacks by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/626\r\n* fix a step of the dns endpoint dockerfile for integration tests by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/627\r\n* Prepare v3.2.1 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/628\r\n\r\n## New Contributors\r\n* @a-detiste made their first contribution in https://github.com/wapiti-scanner/wapiti/pull/616\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.2.0...3.2.1",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.2.0",
+    "published_at": "2024-08-13T09:29:56Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.2.0",
+    "summary": "3.2.0",
+    "body": "- Update mod_nikto, mod_wapp databases\r\n- Search known CVEs for software versions versions found by mod_wapp\r\n- Add `--cookie-value` option to easily pass cookies to the crawler\r\n- Add a `mod_ldap` module for error-based and boolean-based LDAP injection\r\n- `mod_ssl` is now based on the `sslcan` binary, install it on our own\r\n- Improvements on `mod_network_device` (detect Citrix, CheckPoint, FortiWeb, FortiNet, Harbor, etc)\r\n- Scan APIs given a Swagger (OpenAPI) file\r\n- Add capabilities to inject payloads inside JSON bodies\r\n- Add Wordpress module and theme enumeration\r\n- Add Drupal, SPIP, Joomla, PrestaShop enumeration module",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.8",
+    "published_at": "2024-05-16T19:22:37Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.8",
+    "summary": "3.1.8",
+    "body": "    mod_spring4shell: New Module to detect the Spring4Shell vulnerability\r\n    mod_upload: New module to detect unrestricted file uploads (attempt to upload PHP code)\r\n    mod_https_redirect: New module to detect lack of redirect-to-https behavior\r\n    mod_crlf: Fix double-encoding errors\r\n    mod_methods: In-depth check of methods allowed by a web server\r\n    mod_permanentxss: Fix several bugs\r\n    mod_xss: Detect if HTML injection is allowed when XSS injection failed\r\n    mod_wapp: several improvements like CPE versions added to output\r\n    mod_log4shell: Add Ubiquiti UniFi to targets\r\n    mod_buster: Discovered assets are added to the generated report\r\n    Core: make module errors more verbose\r\n    Core: add a Dockerfile to quickly set up your own PHP endpoint\r\n    CLI: renamed some authentication options",
+    "category": "security"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.7",
+    "published_at": "2023-03-05T18:06:43Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.7",
+    "summary": "3.1.7",
+    "body": "Support Python 3.11",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.6",
+    "published_at": "2023-01-31T21:34:59Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.6",
+    "summary": "3.1.6",
+    "body": "31/01/2023\r\n    Wapiti 3.1.6\r\n    Wappalyze: improve detection with DOM rules\r\n    Core: fix proxy option",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.5",
+    "published_at": "2023-01-16T21:04:33Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.5",
+    "summary": "3.1.5",
+    "body": "    LFI: adds a payload for loknop technique (chaining PHP filters)\r\n    mod_cookie: Fix bad WSTG code for bad cookie attribute\r\n    Core: use proxy settings for updating\r\n    Core: fix creds options\r\n    Core: update most dependencies\r\n\r\n",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.4",
+    "published_at": "2022-10-24T18:16:45Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.4",
+    "summary": "3.1.4",
+    "body": "###  Wapiti 3.1.4\r\n\r\n* Crawler: Adds support for Firefox headless (using the new `--headless` option)\r\n* Core: improve authentication. You can now pass HTTP auth (basic, ntml, etc) AND login by sending creds to an HTML form\r\n* Core: remove internationalization\r\n\r\nAuthentication related optionshave changed, check the manual page for information",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.3",
+    "published_at": "2022-07-09T15:42:52Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.3",
+    "summary": "3.1.3",
+    "body": "## 09/07/2022: Wapiti 3.1.3\r\n* Reports: Add a new --detailed-report option that will put HTTP responses (headers and bodies) in the report.\r\n* Crawler: Add a new --mitm-port <PORT> option that will replace the crawler with an intercepting proxy (mitmproxy)\r\n* Core: Dropped support of Python 3.7",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.2",
+    "published_at": "2022-05-13T16:34:14Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.2",
+    "summary": "Fix crash after scan",
+    "body": "Fix a crash that may occur after the crawling and before laucnhing attacks (`connection pool was closed`)",
+    "category": "other"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.1",
+    "published_at": "2022-02-23T13:40:55Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.1",
+    "summary": "3.1.1",
+    "body": "  Wapiti 3.1.1\r\n  Crawler: Fix a bug preventing Wapiti to scan websites with bad ciphers (SSL 3, TLS 1.0 for example)\r\n  Report: Add some unicode emojis in the HTML report to indicate the criticality of each vulnerability\r\n  XXE: more payloads to target non-PHP applications + raise a warning when the DTD file was reached by the target but exfiltration didn't succeed\r\n  CLI: --update option will only update chosen modules\r\n  CLI: New --data option allows to launch attacks on a single POST request. This option expect a url-encoded string.",
+    "category": "security"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
+    "version": "3.1.0",
+    "published_at": "2022-02-06T18:36:05Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.1.0",
+    "summary": "3.1.0",
+    "body": "    Wapiti 3.1.0\r\n    Crawler: Fix passing named \"button\" tags in HTML forms\r\n    Modules: Skip modules that fails to load properly (missing dependencies, code error, etc)\r\n    Log4Shell: Attack POST parameters too, support for attacks on VMWare vSphere and some Apache products (Struts, Druid and Solr)\r\n    CSRF: Django anti-CSRF token added to the whitelist\r\n    Modules: Added references to WSTG code for each supported attack, separate Reflected XSS from Stored XSS in reports\r\n    Crawler: Improved the parsing of HTML redirections (meta refresh)\r\n    HashThePlanet: Added a new module to detect technologies and software versions based on the hashes of files.\r\n    Crawler: Removed httpx-socks dependencies in favor of builtin SOCKS support in httpx. SOCKS support is fixed.\r\n    Crawler: Upgraded httpcore to latest version in order to fix the ValueError exception that could occur on modules with high concurrency (buster, nikto)\r\n    Core: Load correctly resources if Wapiti is running from an egg file.",
+    "category": "bugfix"
+  }
+]

@@ -174,7 +174,9 @@ tools:
     type: scrape_burpsuite
     url: https://portswigger.net/burp/releases
     homepage: https://portswigger.net/burp
-    features_url: https://portswigger.net/burp/features
+    features_url: https://portswigger.net/burp/documentation
+    community_url: https://portswigger.net/burp/communitydownload
+    pricing_url: https://portswigger.net/burp/pro
     license: Proprietary
     pricing: Free (Community) / Paid (Pro/Enterprise)
     description: "Industry-leading web security testing platform with proxy, scanner, and attack tools."

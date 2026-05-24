@@ -1,0 +1,112 @@
+[
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.10",
+    "published_at": "2026-01-01T18:27:27Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.10",
+    "summary": "Tiarsus Helexina",
+    "body": "Stable version 1.10 ([changeset](https://github.com/sqlmapproject/sqlmap/compare/1.9...1.10))",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.9",
+    "published_at": "2025-01-02T00:10:45Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.9",
+    "summary": "Erlathan Ulaven",
+    "body": "Stable version 1.9 ([changeset](https://github.com/sqlmapproject/sqlmap/compare/1.8...1.9))",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.8",
+    "published_at": "2024-01-03T22:20:06Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.8",
+    "summary": "Ailmar Faxina",
+    "body": "Stable version 1.8 ([changeset](https://github.com/sqlmapproject/sqlmap/compare/1.7...1.8))",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.7",
+    "published_at": "2023-01-02T22:32:55Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.7",
+    "summary": "Elwin Caiwenys",
+    "body": "Stable version 1.7 ([changeset](https://github.com/sqlmapproject/sqlmap/compare/1.6...1.7))",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.6",
+    "published_at": "2022-01-03T10:35:57Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.6",
+    "summary": "Albanwr Flameaxe",
+    "body": "Stable version 1.6 ([changeset](https://github.com/sqlmapproject/sqlmap/compare/1.5...1.6))",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.5",
+    "published_at": "2021-01-03T14:27:24Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.5",
+    "summary": "Shazora Bradleflame",
+    "body": "Stable version 1.5 ([changeset](https://github.com/sqlmapproject/sqlmap/compare/1.4...1.5))",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.4",
+    "published_at": "2020-01-01T12:27:31Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.4",
+    "summary": "Pontigan Caleflame",
+    "body": "Stable version 1.4 ([changeset](https://github.com/sqlmapproject/sqlmap/compare/1.3...1.4))",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.3",
+    "published_at": "2019-01-05T22:20:23Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.3",
+    "summary": "1.3",
+    "body": "Smiwand Aumbutler",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.2",
+    "published_at": "2018-01-08T00:25:09Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.2",
+    "summary": "1.2",
+    "body": "Romerobacca Gonzalewalker",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.1",
+    "published_at": "2017-04-07T13:44:27Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.1",
+    "summary": "1.1",
+    "body": "Chewstewartca Skystro",
+    "category": "other"
+  },
+  {
+    "tool_id": "sqlmap",
+    "tool_name": "sqlmap",
+    "version": "1.0",
+    "published_at": "2016-02-27T15:10:57Z",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.0",
+    "summary": "1.0",
+    "body": "",
+    "category": "other"
+  }
+]
