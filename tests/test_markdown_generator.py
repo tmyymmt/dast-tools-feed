@@ -90,11 +90,11 @@ def test_generate_tool_page_links_paid_to_pricing_page():
         **TOOL,
         "pricing": "Free (Community) / Paid (Pro/Enterprise)",
         "community_url": "https://portswigger.net/burp/communitydownload",
-        "pricing_url": "https://portswigger.net/burp/pricing",
+        "pricing_url": "https://portswigger.net/burp/pro",
     }
     result = generate_tool_page(tool, ENTRIES)
     assert "[Free (Community)](https://portswigger.net/burp/communitydownload)" in result
-    assert "[Paid](https://portswigger.net/burp/pricing)" in result
+    assert "[Paid](https://portswigger.net/burp/pro)" in result
 
 
 def test_generate_tool_page_ja_contains_japanese_headers():
@@ -115,11 +115,11 @@ def test_generate_tool_page_ja_links_paid_to_pricing_page():
         **TOOL,
         "pricing": "Free (Community) / Paid (Pro/Enterprise)",
         "community_url": "https://portswigger.net/burp/communitydownload",
-        "pricing_url": "https://portswigger.net/burp/pricing",
+        "pricing_url": "https://portswigger.net/burp/pro",
     }
     result = generate_tool_page_ja(tool, ENTRIES)
     assert "[Free (Community)](https://portswigger.net/burp/communitydownload)" in result
-    assert "[Paid](https://portswigger.net/burp/pricing)" in result
+    assert "[Paid](https://portswigger.net/burp/pro)" in result
 
 
 def test_generate_comparison_page_contains_all_tools():
@@ -165,11 +165,11 @@ def test_generate_comparison_page_links_paid_to_pricing_page():
         "name": "Burp Suite",
         "pricing": "Free (Community) / Paid (Pro/Enterprise)",
         "community_url": "https://portswigger.net/burp/communitydownload",
-        "pricing_url": "https://portswigger.net/burp/pricing",
+        "pricing_url": "https://portswigger.net/burp/pro",
     }
     result = generate_comparison_page([tool], {"burpsuite": []})
     assert "[Free (Community)](https://portswigger.net/burp/communitydownload)" in result
-    assert "[Paid](https://portswigger.net/burp/pricing)" in result
+    assert "[Paid](https://portswigger.net/burp/pro)" in result
 
 
 def test_generate_comparison_page_ja_links_paid_to_pricing_page():
@@ -179,11 +179,11 @@ def test_generate_comparison_page_ja_links_paid_to_pricing_page():
         "name": "Burp Suite",
         "pricing": "Free (Community) / Paid (Pro/Enterprise)",
         "community_url": "https://portswigger.net/burp/communitydownload",
-        "pricing_url": "https://portswigger.net/burp/pricing",
+        "pricing_url": "https://portswigger.net/burp/pro",
     }
     result = generate_comparison_page_ja([tool], {"burpsuite": []})
     assert "[Free (Community)](https://portswigger.net/burp/communitydownload)" in result
-    assert "[Paid](https://portswigger.net/burp/pricing)" in result
+    assert "[Paid](https://portswigger.net/burp/pro)" in result
 
 
 def test_render_html_returns_html_document():

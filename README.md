@@ -15,9 +15,9 @@ Specifically, it targets tools that send requests to live web applications or AP
 The following categories are **out of scope**:
 
 - **SCA (Software Composition Analysis)**: Tools that detect known vulnerabilities based on SBOMs and dependency analysis
-	(Related: https://github.com/tmyymmt/sca-tools-feed/)
+  (Related: https://github.com/tmyymmt/sca-tools-feed/)
 - **SAST (Static Application Security Testing)**: Tools that detect vulnerabilities through static source code analysis
-	(Related: https://github.com/tmyymmt/dast-tools-feed/)
+  (Related: https://github.com/tmyymmt/sast-tools-feed/)
 
 ## Covered Tools
 
