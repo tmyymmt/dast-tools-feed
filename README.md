@@ -19,6 +19,17 @@ The following categories are **out of scope**:
 - **SAST (Static Application Security Testing)**: Tools that detect vulnerabilities through static source code analysis
   (Related: https://github.com/tmyymmt/sast-tools-feed/)
 
+## Covered Tools
+
+| Tool | Type | License |
+|------|------|---------|
+| [OWASP ZAP](https://www.zaproxy.org) | OSS | Apache-2.0 |
+| [Nuclei](https://nuclei.projectdiscovery.io) | OSS | MIT |
+| [sqlmap](https://sqlmap.org) | OSS | GPL-2.0 |
+| [Nikto](https://cirt.net/Nikto2) | OSS | GPL-2.0 |
+| [Wapiti](https://wapiti-scanner.github.io) | OSS | GPL-2.0 |
+| [Burp Suite](https://portswigger.net/burp) | Commercial | Proprietary |
+
 ## How It Works
 
 - Update feed files and render HTML pages (from Markdown sources) using one of the following methods:
