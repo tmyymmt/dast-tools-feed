@@ -1,0 +1,102 @@
+[
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.5.1",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/dast-2026-5-1",
+    "summary": "DAST 2026.5.121 May 2026 at 14:36 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.4.3",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/professional-community-2026-4-3",
+    "summary": "Professional / Community 2026.4.313 May 2026 at 13:48 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.5",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/dast-2026-5",
+    "summary": "DAST 2026.512 May 2026 at 10:58 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.4.2",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/professional-community-2026-4-2",
+    "summary": "Professional / Community 2026.4.208 May 2026 at 10:27 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.4.1",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/professional-community-2026-4-1",
+    "summary": "Professional / Community 2026.4.129 April 2026 at 13:29 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.4",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/professional-community-2026-4",
+    "summary": "Professional / Community 2026.423 April 2026 at 13:45 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.4",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/dast-2026-4",
+    "summary": "DAST 2026.422 April 2026 at 12:47 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.3.3",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/professional-community-2026-3-3",
+    "summary": "Professional / Community 2026.3.321 April 2026 at 13:34 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.3.1",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/dast-2026-3-1",
+    "summary": "DAST 2026.3.109 April 2026 at 14:35 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.3.2",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/professional-community-2026-3-2",
+    "summary": "Professional / Community 2026.3.208 April 2026 at 10:32 UTC",
+    "body": "",
+    "category": "feature"
+  }
+]
