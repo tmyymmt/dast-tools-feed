@@ -19,6 +19,12 @@ The following categories are **out of scope**:
 - **SAST (Static Application Security Testing)**: Tools that detect vulnerabilities through static source code analysis
   (Related: https://github.com/tmyymmt/sast-tools-feed/)
 
+## How It Works
+
+- Update feed files and render HTML pages (from Markdown sources) using one of the following methods:
+  - Run weekly via GitHub Actions (every Friday at UTC 22:00)
+  - Create an Issue, have Copilot create a PR, complete review, and merge to main
+
 ## Covered Tools
 
 | Tool | Type | License |
@@ -29,12 +35,6 @@ The following categories are **out of scope**:
 | [Nikto](https://cirt.net/Nikto2) | OSS | GPL-2.0 |
 | [Wapiti](https://wapiti-scanner.github.io) | OSS | GPL-2.0 |
 | [Burp Suite](https://portswigger.net/burp) | Commercial | Proprietary |
-
-## How It Works
-
-- Update feed files and render HTML pages (from Markdown sources) using one of the following methods:
-  - Run weekly via GitHub Actions (every Friday at UTC 22:00)
-  - Create an Issue, have Copilot create a PR, complete review, and merge to main
 
 ## Feed URLs
 
