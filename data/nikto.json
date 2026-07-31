@@ -2,6 +2,16 @@
   {
     "tool_id": "nikto",
     "tool_name": "Nikto",
+    "version": "2.6.1",
+    "published_at": "2026-07-31T16:17:55Z",
+    "url": "https://github.com/sullo/nikto/releases/tag/2.6.1",
+    "summary": "Nikto 2.6.1",
+    "body": "The [Nikto 2.6.1](https://github.com/sullo/nikto) release focuses on scan consistency, safer internals, and a few behavior changes.\r\n\r\n### SQL Direct Reporting\r\n\r\nThe new *SQL Direct* plugin will insert findings directly into a MySQL or PostgreSQL database via the **`-F sqld`** output format option. See the [wiki docs](https://github.com/sullo/nikto/wiki/SQL-Direct-Reporting) for setup info.\r\n\r\n### TLS Keep-Alives\r\n\r\nTLS connections now use keep-alives for session reuse. This results in a significant scan speed increase (~18%). Can be disabled if a server misbehaves with `-nosslkeepalive`.\r\n\r\n### User-Agent handling\r\n\r\nNikto no longer rotates User-Agents on every request by default. It now uses a static Chrome UA for more stable responses. This reverts to behavior from 2.5.0.\r\n\r\n- **`-useragent`** forces a specific string.\r\n- **`-evasion R`** per-request Random User-Agents from the database.\r\n- The suggested-headers check always uses the static UA, even when `-evasion R` is set.\r\n\r\n### Other Changes\r\n\r\n- **Dictionary attack plugin removed**.\r\n- **`@RFIURL`** — the default now lives in `db_variables`; an entry in `nikto.conf` / `udb_variables` still overrides.\r\n- **Version / outdated checks** — more accurate comparison based on installation method. Added a six hour no-recheck window.\r\n- **Standardized on `JSON::PP`.**\r\n- **`replay.pl`** — proxy parsing/usage fixed.\r\n- Debug print now shows proper test id or plugin name for request/response prints.\r\n- Bunch of other bug fixes for accuracy & reliability, safer file opens.\r\n- Cleaned up HTML output.\r\n- Better archive detection.\r\n- Auth/header edge-case cleanups.\r\n",
+    "category": "bugfix"
+  },
+  {
+    "tool_id": "nikto",
+    "tool_name": "Nikto",
     "version": "2.6.0",
     "published_at": "2026-02-11T22:01:29Z",
     "url": "https://github.com/sullo/nikto/releases/tag/2.6.0",
