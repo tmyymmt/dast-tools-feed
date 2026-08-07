@@ -2,6 +2,26 @@
   {
     "tool_id": "burpsuite",
     "tool_name": "Burp Suite",
+    "version": "2026.7.3",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/professional-community-2026-7-3",
+    "summary": "Professional / Community 2026.7.306 August 2026 at 13:32 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
+    "version": "2026.8",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/dast-2026-8",
+    "summary": "DAST 2026.805 August 2026 at 07:58 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
     "version": "2026.7.2",
     "published_at": "2026-01-01T00:00:00Z",
     "url": "https://portswigger.net/burp/releases/professional-community-2026-7-2",
