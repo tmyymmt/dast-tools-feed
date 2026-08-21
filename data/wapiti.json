@@ -2,6 +2,16 @@
   {
     "tool_id": "wapiti",
     "tool_name": "Wapiti",
+    "version": "3.3.2",
+    "published_at": "2026-08-19T08:28:10Z",
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.3.2",
+    "summary": "3.3.2",
+    "body": "## What's Changed\r\n* fix(explorer): detect soft-404 / SPA catch-all pages before persisting them by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/809\r\n* chore: prepare release 3.3.2 by @devl00p in https://github.com/wapiti-scanner/wapiti/pull/811\r\n\r\n\r\n**Full Changelog**: https://github.com/wapiti-scanner/wapiti/compare/3.3.1...3.3.2",
+    "category": "feature"
+  },
+  {
+    "tool_id": "wapiti",
+    "tool_name": "Wapiti",
     "version": "3.3.1",
     "published_at": "2026-07-27T14:47:00Z",
     "url": "https://github.com/wapiti-scanner/wapiti/releases/tag/3.3.1",
