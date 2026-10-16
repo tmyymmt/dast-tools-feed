@@ -2,6 +2,16 @@
   {
     "tool_id": "burpsuite",
     "tool_name": "Burp Suite",
+    "version": "2026.10",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://portswigger.net/burp/releases/professional-community-2026-10",
+    "summary": "Professional / Community 2026.1012 October 2026 at 12:01 UTC",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "burpsuite",
+    "tool_name": "Burp Suite",
     "version": "2026.9.2",
     "published_at": "2026-01-01T00:00:00Z",
     "url": "https://portswigger.net/burp/releases/professional-community-2026-9-2",
