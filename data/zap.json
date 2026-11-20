@@ -2,6 +2,16 @@
   {
     "tool_id": "zap",
     "tool_name": "OWASP ZAP",
+    "version": "w2026-11-19",
+    "published_at": "2026-11-19T14:58:47Z",
+    "url": "https://github.com/zaproxy/zaproxy/releases/tag/w2026-11-19",
+    "summary": "w2026-11-19",
+    "body": "| File | Checksum (SHA-256) |\r\n|---|---|\r\n| [ZAP_WEEKLY_D-2026-11-19.zip](https://github.com/zaproxy/zaproxy/releases/download/w2026-11-19/ZAP_WEEKLY_D-2026-11-19.zip) | `5b797065d162b6ebfece46a46574d70f4c3b156bfc97b0b947b05dc9f116465d` |\r\n",
+    "category": "feature"
+  },
+  {
+    "tool_id": "zap",
+    "tool_name": "OWASP ZAP",
     "version": "w2026-11-11",
     "published_at": "2026-11-11T17:45:31Z",
     "url": "https://github.com/zaproxy/zaproxy/releases/tag/w2026-11-11",
